@@ -212,13 +212,21 @@ booksByAuthor(dictionary);
 // Bonus: Iteration 6 | Average Page Count
 // Create a function named averagePageCount() that takes one argument - the books array. The function should return a number representing the average page count of all the books in the array.
 
-// The formula to calculate the average page count is:
+// The formula to calculate the average page count is:average page count = sum of all books' pages / number of books
 
 // Bonus: Iteration 6 | Average Page Count
 console.log("Ejercicio 6");
 function averagePageCount(booksArray) {
   // Your code here:
+  let count = 0;
+  
+  
+  for (let book of booksArray){
+    count += book.pages;
+  }
+  return count / booksArray.length;
+
 }
 
 
-console.log(averagePageCount(booksArray));
+console.log("Promedio de paginas:" + averagePageCount(booksArray));
