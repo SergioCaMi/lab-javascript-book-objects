@@ -202,7 +202,7 @@ function booksByAuthor(dictionary) {
       books.push(bookInfo);
     });
   });
-  console.log(books);
+  return books;
 }
 
 booksByAuthor(dictionary);
